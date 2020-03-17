@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Temperature Converter</h3>
+<p>Type a value in the Fahrenheit field to convert value to Celcius</p>
+<p>Fahrenheit: <input type="text" id="change" placeholder="F"></p>
+<button id="result" onclick="calChange()">Change</button>
+<p>Celcius: <input type="text" id="output"></p>
+<script>
+    function calChange() {
+        let a = document.getElementById("change").value;
+        let c = (a - 32) / 1.8;
+        document.getElementById("output").value = c;
+    }
+</script>
+</body>
+</html>

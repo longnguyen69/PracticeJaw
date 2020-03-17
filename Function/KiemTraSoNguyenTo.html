@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkPrime(n) {
+        for (let i = 2; i < n; i++) {
+            if (n%i===0){
+                return false;
+            }
+        }
+        return true;
+    }
+    function calDisplayPrime() {
+        let a = +prompt("nhap vao so can kiem tra: ");
+        if (checkPrime(a)){
+            alert("Ban vua nhap so nguyen to");
+        }
+    }
+    calDisplayPrime();
+</script>
+</body>
+</html>

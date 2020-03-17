@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Feet To Meter</title>
+    <script>
+        function rateamount() {
+            let value2 =  document.getElementById("select2").value;
+            //alert(value2);
+            let ratemn = ((+document.getElementById("input").value)*value2)/(document.getElementById("select1").value);
+            document.getElementById("result").value = ratemn;
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Feet</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Meter</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="input" oninput="rateamount()"></td>
+        <td><select id="select1">
+            <option selected value="1">Feet</option>
+            <option value="0.305">Meter</option>
+        </select></td>
+        <td><select id="select2">
+            <option value="0.305" selected>Meter</option>
+            <option value="1">feed</option>
+
+        </select></td>
+        <!--        <td><input type="button" id="changemoney" onclick="rateamount()" value="Convert" ></td>-->
+        <td><input type="text" id="result"></td>
+    </tr>
+</table>
+</body>
+</html>
